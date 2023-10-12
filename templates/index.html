@@ -1,0 +1,58 @@
+{% extends "components/__layout.html" %}
+{% block content %}
+
+<style>
+  body {
+    background-image: url('/static/redmain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0; 
+  }
+
+</style>
+<div class="block">
+    <div class="align-center">
+    <h1 class="b"><p class="font-weight-bold">Hard Rock and Heavy Metal</p></h1><br>
+        <div class="b">
+            Я предлагаю взглянуть на подборку популярнейших песен от популярнейших групп в стиле рок.
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <a href="/metallica"><img src="/static/blackalbom.jpg" width="400" height="400" alt="Black Albom"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="/scorpions"><img src="/static/Stilllovingyou.jpg" width="400" height="400" alt="StillLovingYou"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="/slipknot"><img src="/static/Slipknot_Psychosocial.jpg" width="400" height="400" alt="Psychosocial"></a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            Вы увидете <a href="/metallica">Металлику</a>, <a href="/scorpions">Скорпионс</a> и <a href="/slipknot">Слипкнот</a>
+        </div>
+    </div>
+</div>
+    
+<style>
+  .carousel-control-prev, .carousel-control-next {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #000; /* Цвет стрелок */
+  }
+</style>
+
+{% endblock %}

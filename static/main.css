@@ -1,0 +1,81 @@
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.active2 {
+    background-color: greenyellow;
+}
+
+.main-background {
+    background-image: black;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.block {
+    margin-bottom: 0.5rem;
+    margin: 0.25em;
+    padding: 0.5em;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+
+[class^=col]
+        {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86,61,124,.15);
+            border: 1px solid rgba(86,61,124,.15);
+        }
+A {
+    color: white
+}
+
+A:visited {
+    color: rgb(212, 212, 212)
+}
+
+A:active {
+    color: blue
+}
+.b {
+    color: white
+}
+.black {
+    color: black
+}
+body {
+    font-size: 16px;
+}
+/* Стили для больших экранов (десктоп) */
+@media (min-width: 992px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        margin-right: 30px;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-nav {
+        display: flex;
+    }
+    .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+}
+
+/* Стили для маленьких экранов (мобильных устройств) */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-collapse {
+        display: none;
+    }
+}
